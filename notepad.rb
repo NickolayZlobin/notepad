@@ -10,7 +10,7 @@ choices = Post.post_types
 choice = -1
 
 until choice >=0 && choice < choices.size
-    choices.each_whit_index do |type. index|
+    choices.each_with_index do |type, index|
         puts "\t#{index}. #{type}"
     end
     choice = gets.chomp.to_i 
